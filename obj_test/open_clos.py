@@ -19,7 +19,7 @@ class Staff:
     def add_staff(self, staff):
         self.__sta_list.append(staff)
 
-    def calculate_employee_salaries(self, sta_obj):
+    def calculate_employee_salaries(self):
         for item in self.__sta_list:
             re = item.count_wages()
             print(re)
@@ -62,8 +62,6 @@ if __name__ == "__main__":
     s01 = Staff()
     s01.add_staff(p01)
     s01.add_staff(ss01)
-    aa = s01.calculate_employee_salaries(p01)
-    # bb = s01.calculate_employee_salaries(ss01)
-    print(aa)
+    s01.calculate_employee_salaries()
     
 
