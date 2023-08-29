@@ -1,0 +1,38 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            
+                "name": "Python: Run ", // 配置名称，将在调试配置下拉列表中显示
+                "type": "python", // 调试类型，这里是Python
+                "request": "launch", // 请求类型，这里选择“launch”表示启动调试
+                "cwd": "${workspaceFolder}", // 当前工作目录设置为项目文件夹
+                "console": "integratedTerminal", // 使用VSCode的集成终端显示输出
+                "python": "D:\\anaconda3\\python", // 指定Python解释器的路径
+                "stopOnEntry": false, // 是否在程序启动时立即暂停，以便在第一行代码之前设置断点
+                "showReturnValue": true, // 是否在调试过程中显示函数的返回值
+                "redirectOutput": true ,// 是否将程序输出重定向到调试控制台，而不是终端                
+                "justMyCode": false,
+                "program": "${file}",
+                "port": 5678,
+                "host": "127.0.0.1",
+                // "name": "Python: Current File",
+                // "type": "python",
+                // "module": "my_module", // 要执行的Python模块名称，请替换为实际的模块名称
+                // "request": "launch",
+                // "env": {}, // 环境变量字典，可以在这里添加自定义环境变量
+                // "envFile": "${workspaceFolder}/.env", // 如果需要从文件加载环境变量，可以指定.env文件的路径
+                // "args": [], // 如果需要传递命令行参数，可以在这个列表中添加
+                // "console": "integratedTerminal"
+                // "debugOptions": [
+                //     "WaitOnAbnormalExit",
+                //     "WaitOnNormalExit",
+                //     "RedirectOutput",
+                // ]
+    
+        }
+    ]
+}
