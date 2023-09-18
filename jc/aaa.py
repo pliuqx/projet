@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 '''
-@File    :   aaa.py
-@Time    :   2023/08/22 16:24:07
-@Author  :   应无所住 、何生其心 
-@Version :   python3.10
-@Software:   VsCode 
+    @File    :   aaa.py
+    @Time    :   2023/08/22 16:24:07
+    @Author  :   应无所住 、何生其心 
+    @Version :   python3.10
+    @Software:   VsCode 
 '''
 
 class GraphicManager:

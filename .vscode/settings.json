@@ -1,5 +1,8 @@
 {
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "aiXcoder.showTrayIcon": false,
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "commentTranslate.targetLanguage": "zh-CN",
+    "commentTranslate.source": "DarkCWK.youdao-youdao",
+    "editor.fontFamily": "Consolas, 'Tw Cen MT', monospace"
 }

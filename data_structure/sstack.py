@@ -8,7 +8,7 @@
 class sstackErro(Exception):  #异常类
     pass
 
-class sstack:
+class Sstack:
     def __init__(self):
         self._elems = []
     
@@ -31,7 +31,7 @@ class sstack:
     
     
 if __name__=="__main__":
-    st = sstack()
+    st = Sstack()
     st.push(3)
     st.push(2)
     st.push(1)

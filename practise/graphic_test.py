@@ -29,21 +29,21 @@
 """
 
 
+
+
+
 # 定义一个图形类
 class Figuer:
     def __init__(self,c = 0 ,k = 0 ,r =0):
         self.a = c
         self.b = k
         self.r = r
-        pass
-    pass
 
 
 # 计算方法类
 class Compute:
     def pub_run(self):
-        raise NotImplementedError()
-        pass 
+        raise NotImplementedError() 
 
 # 定义一个图形管理器
 class FigureSystem:
@@ -57,10 +57,7 @@ class FigureSystem:
             self.fig_list.append(fig_info)
          
     def sum_fig(self,):
-        con_sum = 0
-        for item in self.fig_list:
-            con_sum += item.pub_run()
-        return con_sum
+        return sum(item.pub_run() for item in self.fig_list)
 
 
 class Circle(Compute):
