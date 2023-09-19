@@ -45,8 +45,5 @@ if __name__ == "__main__":
     ls.push(2)
     ls.push(3)
     ls.push(4)
-    print(ls.pop())
-    print(ls.pop())
-    print(ls.pop())
-    print(ls.pop())
-    print(ls.pop())
+    while ls.is_empty:
+        print(ls.pop())
