@@ -57,7 +57,7 @@ class MyThread(Thread):  # 定义一个类，继承Thread
             while data[0] > index + 1:
                 pass
             if data[0] == index + 1:
-                with open(f'h:/m3u8/ts/{10816 + index}.ts', 'wb') as file:
+                with open(f'h:/m3u8/ts/{100001 + index}.ts', 'wb') as file:
                     file.write(cryptor.decrypt(res.content)) # 将文件解密后写入
                     print(self.name, f'{index}--------保存成功！！！!!')
                     index += 1
