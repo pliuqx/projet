@@ -10,7 +10,7 @@ import os
 
 
 def ts(txt_str):
-    url_all = []
+    # url_all = []
     pet = re.compile("https://hnts.ymuuy.com:65/hls/115/20230712/1752663/(.*?).ts")
     with open(txt_str,"r")  as f:
         line = f.readlines()
@@ -18,10 +18,11 @@ def ts(txt_str):
         url = re.findall(pet,str(line))
         for i in range(len(url)):
             url_a = f"https://hnts.ymuuy.com:65/hls/115/20230712/1752663/{url[i]}.ts"
-            url_all.append(url_a)
-            # print(url_all)
-    return url_all   
+            # url_all.append(url_a)
+            yield url_a
+    # return ur/l_all   
 
 txt_s = "h:/m3u8/MM.txt"
 
-print(ts(txt_s))
+for i in ts(txt_s):
+    print(i)

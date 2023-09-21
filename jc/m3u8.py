@@ -26,7 +26,7 @@ cookies = {
 }
 
 headers = {
- 'Connection': 'keep-alive',
+    'Connection': 'keep-alive',
     'Pragma': 'no-cache',
     'Cache-Control': 'no-cache',
     'Upgrade-Insecure-Requests': '1',
@@ -57,16 +57,29 @@ class MyThread(Thread):  # 定义一个类，继承Thread
             while data[0] > index + 1:
                 pass
             if data[0] == index + 1:
-                with open(f'h:/m3u8/ts/{100001 + index}.ts', 'wb') as file:
+                with open(f'h:/m3u8/ts/{10001 + index}.ts', 'wb') as file:
                     file.write(cryptor.decrypt(res.content)) # 将文件解密后写入
                     print(self.name, f'{index}--------保存成功！！！!!')
                     index += 1
 
-if __name__=="__main__":
-    urls = []
+def get_url(): # 数据准备函数生成器
+    """
+            生成器函数，用法的好处，每需要一次数据提取一次，不用将全部的数据提取到一个
+            容器里，占用过多的内存空章
+    """
     with open('h:/m3u8/https.txt', 'r') as f:
         lines = f.readlines()
-        urls.extend(iter(lines))
+        for i in lines:
+            yield i 
+        
+
+
+if __name__=="__main__":
+    # urls = []
+    # with open('h:/m3u8/https.txt', 'r') as f:
+    #     lines = f.readlines()
+    #     urls.extend(iter(lines))
+    urls = get_url()
     index = -1
     q = Queue()
     for count, url in enumerate(urls):

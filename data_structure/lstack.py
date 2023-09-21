@@ -16,7 +16,7 @@ class Node:
         self.val = val   # 有用数据
         self.next = next  # 循环下一个节点关系
 
-class Lstack:
+class LStack:
     def __init__(self):
         self._top = None
     
@@ -39,7 +39,7 @@ class Lstack:
         return self._top.val
 
 if __name__ == "__main__":
-    ls = Lstack()
+    ls = LStack()
     ls.push(1)
     ls.push(1)
     ls.push(2)
