@@ -22,7 +22,7 @@ def main():
     f.write(title + '\n')
     # print(title)
     for i in range(1853,2040):
-        url ='https://www.bige9.com'+ f'/book/44550/{i}.html'
+        url = f'https://www.bige9.com/book/44550/{i}.html'
         head = {  # 模拟浏览器头部信息，向豆瓣服务器发送消息
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36"
         }
@@ -39,5 +39,3 @@ def main():
 if __name__ == '__main__':
     f = open('./chuchen1.txt', 'a+', encoding='utf-8')
     main()
-
-    pass
