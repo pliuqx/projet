@@ -30,7 +30,3 @@ class MyrangeIter:
 if __name__ == "__main__":
     for i in Myrange(10):
         print(i)
-
-
-
-    pass
